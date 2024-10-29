@@ -37,7 +37,7 @@ const Home = () => {
       {isLoading && <Loader />}
       {!error && !isLoading && data && (
         <Card
-          style={{ maxWidth: "500px", maxHeight: "400px" }}
+          style={{ maxWidth: "500px", maxHeight: "450px" }}
           className="card rounded-4 shadow-sm text-center p-lg-3 p-2"
         >
           {randomAdvice && (
@@ -57,7 +57,7 @@ const Home = () => {
                 <Texts
                   text={`"${randomAdvice.advice}"`}
                   size="1.5rem"
-                  className="fw-bold"
+                  className="fw-bold advice"
                   color="var(--Light-Cyan)"
                 />
               </blockquote>

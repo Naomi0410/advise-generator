@@ -42,15 +42,15 @@ main {
 
 .desktopDivider {
   left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 370px;
-  bottom: 20%;
+  transform: translate(-50%, 0%);
+  max-width: 400px;
+  bottom: 15%;
 }
 
 .mobileDivider {
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 300px;
+  width: 400px;
   bottom: 20%;
 }
 
@@ -74,6 +74,49 @@ main {
   box-shadow: 0 0 10px hsl(150, 100%, 66%);
 }
 
+@media (max-width: 930px) {
+  .card {
+    position: relative;
+    transform: translate(-50%, 10%);
+    min-height: 260px;
+    width: 470px;
+    background-color: var(--Dark-Grayish-Blue) !important;
+  }
+
+  .advice {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (max-width: 880px) {
+  .card {
+    position: relative;
+    transform: translate(-50%, 10%);
+    min-height: 240px;
+    width: 500px;
+    background-color: var(--Dark-Grayish-Blue) !important;
+  }
+
+  .advice {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (max-width: 830px) {
+  .card {
+    position: relative;
+    transform: translate(-50%, 10%);
+    min-height: 220px;
+    width: 500px;
+    background-color: var(--Dark-Grayish-Blue) !important;
+  }
+
+  .advice {
+    font-size: 1rem !important;
+  }
+}
+
+
 @media (max-width: 435px) {
   .card {
     position: relative;
@@ -92,6 +135,14 @@ main {
     transition: background-color 0.3s;
   }
 
+  .mobileDivider {
+    width: 340px;
+  }
+
+  .advice {
+    font-size: 1.5rem !important;
+  }
+  
 
 }
 
@@ -112,6 +163,10 @@ main {
     transform: translate(-50%, -50%);
     transition: background-color 0.3s;
   }
+
+  .mobileDivider {
+    width: 310px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -131,6 +186,10 @@ main {
     transform: translate(-50%, -50%);
     transition: background-color 0.3s;
   }
+
+  .mobileDivider {
+    width: 280px;
+  } 
 }
 
 @media (max-width: 330px) {
@@ -140,7 +199,7 @@ main {
     left: 50%;
     transform: translate(-50%, 10%);
     min-height: 350px;
-    width: 320px;
+    width: 300px;
     background-color: var(--Dark-Grayish-Blue) !important;
   }
 
@@ -151,4 +210,15 @@ main {
     transition: background-color 0.3s;
   }
 
+  .mobileDivider {
+    width: 260px;
+  }
+
+  .advice {
+    font-size: 1.25rem !important;
+  }
+
+
 }
+
+
